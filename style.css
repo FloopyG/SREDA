@@ -1,0 +1,461 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: Proxima;
+	src: url("font/ProximaNovaBold.otf");
+}
+
+body {
+	background-color: #f3f3f3;
+}
+
+/*
+HEADER
+*/
+
+.h-mainBlock {
+	margin: auto;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 15px;
+	width: 96%;
+}
+
+.h-mainBlockP {
+	display: none;
+	margin: auto;
+	height: 60px;
+	justify-content: space-between;
+	padding-top: 15px;
+	width: 96%;
+}
+
+.h-menuBlock {
+	width: 62%;
+}
+
+.h-logo {
+	height: 45px;
+	margin-top: 10px;
+}
+
+.h-menu {
+	display: flex;
+	list-style: none;
+	width: 100%;
+	justify-content: space-around;
+	height: 100%
+}
+
+.menuLi {
+	width: 33.3%;
+	border-left: 1px #d2cece solid;
+	transition: 0.4s;
+}
+
+.menuLi:hover {
+	background-color: #d2cece;
+	transition: 0.4s;
+}
+
+.menuLi:nth-child(1) {
+	border-left: none;
+}
+
+.h-menuLiA {
+	text-decoration: none;
+	font-size: 26px;
+	color: #3e3a3a;
+	display: block;
+	text-align: center;
+	font-family: Proxima;
+	transition: 0.4s;
+	padding-top: 14px;
+	height: 100%;
+}
+
+.h-menuLiA:hover {
+	color: black;
+	transition: 0.4s;
+}
+
+
+/*
+
+
+Phone MENU
+
+
+*/
+
+
+
+.menuButton {
+	max-width: 90px;
+	cursor: pointer;
+	box-sizing: border-box;
+	padding-top: 20px;
+}
+
+.menuButtonClick {
+	position: relative;
+	height: 34px;
+	width: 34px;
+	z-index: 3;
+}
+
+.menuButtonLine1,
+.menuButtonLine2,
+.menuButtonLine3 {
+	width: 33px;
+	height: 4px;
+	background-color: black;
+	position: absolute;
+	z-index: 3;
+}
+
+.menuButtonLine1 {
+	top: 0px;
+	transform: rotate(0deg);
+	-webkit-transition: all 600ms;
+	-moz-transition: all 600ms;
+	-o-transition: all 600ms;
+	transition: all 600ms;
+
+}
+
+.menuButtonLine1Act {
+	-webkit-transition: all 600ms;
+	-moz-transition: all 600ms;
+	-o-transition: all 600ms;
+	transition: all 600ms;
+	top: 10px;
+	transform: rotate(45deg);
+	background-color: #f3f3f3;
+}
+
+.menuButtonLine2 {
+	top: 10px;
+	-webkit-transition: all 600ms;
+	-moz-transition: all 600ms;
+	-o-transition: all 600ms;
+	transition: all 600ms;
+}
+
+.menuButtonLine2Act {
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.menuButtonLine3 {
+	top: 20px;
+	transform: rotate(0deg);
+	-webkit-transition: all 600ms;
+	-moz-transition: all 600ms;
+	-o-transition: all 600ms;
+	transition: all 600ms;
+}
+
+.menuButtonLine3Act {
+	-webkit-transition: all 600ms;
+	-moz-transition: all 600ms;
+	-o-transition: all 600ms;
+	transition: all 600ms;
+	top: 10px;
+	transform: rotate(-45deg);
+	background-color: #f3f3f3;
+}
+
+.phoneMenu {
+	width: 300px;
+	height: 100%;
+	border-left: 2px solid #080808;
+	background-color: #101010;
+	position: fixed;
+	z-index: 2;
+	right: -302px;
+	top: 0;
+	-webkit-transition: all 400ms;
+	-moz-transition: all 400ms;
+	-o-transition: all 400ms;
+	transition: all 400ms;
+}
+
+.phoneMenuAct {
+	right: 0px;
+	-webkit-transition: all 600ms;
+	-moz-transition: all 600ms;
+	-o-transition: all 600ms;
+	transition: all 600ms;
+}
+
+.menuFilter {
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: black;
+	opacity: 0.6;
+	display: none;
+}
+
+.menuFilterAct {
+	display: block;
+}
+
+.pMenuLogo {
+	color: #f3f3f3;
+	position: relative;
+	top: 22px;
+	left: 60px;
+	font-size: 40px;
+	font-family: Proxima;
+}
+
+.pMenuUl {
+	list-style: none;
+	margin-top: 50px;
+	margin-left: 61px;
+}
+
+.pMenuLi {
+	font-size: 33px;
+	padding-top: 20px;
+	Font-family: Proxima;
+}
+
+.pMenuA {
+	text-decoration: none;
+	color: #f3f3f3;
+	transition: 0.3s
+}
+
+.pMenuA:hover {
+	color: white;
+	transition: 0.3s;
+}
+
+
+
+
+
+/*
+MAIN
+*/
+
+
+
+.m-Gallery {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.m-GalleryBox {
+	width: 47%;
+	padding-top: 15px;
+}
+
+.m-ArtBox {
+	margin: 20px auto 0;
+	position: relative;
+}
+
+.m-Art {
+	display: block;
+	width: 100%;
+	border: 2px solid #d2cece;
+	transition: 0.4s;
+	box-sizing: border-box;
+}
+
+.m-ArtHov {
+	display: block;
+	opacity: 0;
+	position: absolute;
+	background-color: #d2cece;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: 0.2s;
+	text-decoration: none;
+}
+
+.m-ArtHov:hover {
+	transition: 0.2s;
+	opacity: 1;
+}
+
+.ArtText1 {
+	font-family: Proxima;
+	color: black;
+	text-align: center;
+	font-size: 56px;
+	position: relative;
+	top: 30%;
+	cursor: pointer;
+}
+
+.ArtText2 {
+	font-family: Proxima;
+	color: #f3f3f3;
+	text-align: center;
+	font-size: 48px;
+	position: relative;
+	top: 40%;
+	cursor: pointer;
+}
+
+.ArtButton:hover {
+	background-color: black;
+	color: white;
+	transition: 0.4s
+}
+
+
+/*
+
+
+Gallery CONTENT
+
+*/
+
+.hide-box {
+	display: none;
+}
+
+.gallery-Img {
+	float: left;
+	max-width: 50%;
+}
+
+.gallery-Text {
+	float: right;
+	padding-left: 30px;
+	max-width: 500px;
+	text-align: right;
+}
+
+.gallery-Text1 {
+	font-size: 32px;
+	font-family: Proxima;
+	color: black;
+}
+
+.gallery-Text2 {
+	font-size: 22px;
+	font-family: Proxima;
+	color: #595756f2;
+	margin-top: 25px;
+}
+
+
+
+
+/*
+
+
+FOOTER
+
+
+*/
+
+footer {
+	position: relative;
+	bottom: 0;
+	background-color: #101010;
+	border-top: 2px solid #080808;
+	margin-top: 40px;
+}
+
+.fContent {
+	height: 100%;
+	width: 96%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 14px;
+	box
+}
+
+.fLogo {
+	height: 45px;
+	margin-top: 17px;
+}
+
+.fAuthor1,
+.fAuthor2 {
+	font-size: 16px;
+	font-family: Proxima;
+	margin-top: 14px;
+	color: #f3f3f3;
+	transition: 0, 3s;
+	text-decoration: none;
+	display: block;
+}
+
+.fAuthor1:hover {
+	transition: 0.3s;
+	color: white;
+}
+
+.fAuthor2:hover {
+	transition: 0.3s;
+	color: white;
+}
+
+
+@media all and (max-width: 1100px) {
+	.gallery-Img {
+		float: none;
+		max-width: 100%;
+	}
+
+	.gallery-Text {
+		float: none;
+		padding-left: 0;
+		padding-top: 25px;
+		text-align: left;
+	}
+
+	.ArtText1 {
+		top: 20%;
+	}
+
+	.ArtText2 {
+		top: 25%;
+	}
+
+	.ArtButton {
+		width: 180px;
+		top: 20%;
+	}
+
+	.m-Gallery {
+		display: block;
+	}
+
+	.m-GalleryBox {
+		width: 95%;
+		margin: auto;
+	}
+
+	.h-mainBlock {
+		display: none;
+	}
+
+	.h-mainBlockP {
+		display: flex;
+	}
+	
+	.fLogo {
+		height: 35px;
+		margin-top: 24px;
+	}
+}
