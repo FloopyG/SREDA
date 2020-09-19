@@ -330,7 +330,7 @@ Gallery CONTENT
 }
 
 .gallery-Text1 {
-	font-size: 32px;
+	font-size: 35px;
 	font-family: Proxima;
 	color: black;
 }
@@ -354,11 +354,9 @@ FOOTER
 */
 
 footer {
-	position: relative;
-	bottom: 0;
+	margin-top: 40px;
 	background-color: #101010;
 	border-top: 2px solid #080808;
-	margin-top: 40px;
 }
 
 .fContent {
@@ -368,7 +366,6 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 14px;
-	box
 }
 
 .fLogo {
@@ -395,6 +392,62 @@ footer {
 .fAuthor2:hover {
 	transition: 0.3s;
 	color: white;
+}
+
+
+/*
+
+
+
+SHOP
+
+
+
+*/
+
+.m-Shop {
+	padding-top: 200px;
+	padding-bottom: 400px;
+}
+
+.m-ShopP {
+	padding: 9px;
+	margin: auto;
+	font-size: 48px;
+	max-width: 400px;
+	font-family: Proxima;
+}
+
+
+
+
+
+/*
+
+
+ABOUT
+
+
+*/
+
+
+.m-About {
+	max-width: 80%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+}
+
+.m-AboutP {
+	margin-bottom: 20px;
+	font-family: Proxima;
+	font-size: 28px;
+}
+
+.m-AboutA {
+	color: black;
+	
 }
 
 
@@ -440,9 +493,14 @@ footer {
 	.h-mainBlockP {
 		display: flex;
 	}
-	
+
 	.fLogo {
 		height: 35px;
 		margin-top: 24px;
 	}
+
+	.m-Shop {
+		padding-bottom: 200px;
+	}
+
 }
