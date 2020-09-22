@@ -550,12 +550,4 @@ PRELOADER
 }
 
 
-@media (prefers-color-scheme: dark) {
-	body {
-		background-color: #f3f3f3;
-	}
-	
-	.preloader {
-		background: #f3f3f3;
-	}
-}
+
