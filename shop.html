@@ -10,50 +10,52 @@
 	<link rel="stylesheet" href="JS-gallery/jquery.fancybox.min.css">
 </head>
 
-<body>
-	<header>
-		<div class="h-mainBlock">
-			<div class="h-logoBlock">
-				<a href="index.html" class="h-LogoA"><img src="img/Logo.svg" alt="Logo" class="h-logo"></a>
-			</div>
-			<div class="h-menuBlock">
-				<ul class="h-menu">
-					<li class="menuLi"><a href="index.html" class="h-menuLiA">Галерея</a></li>
-					<li class="menuLi"><a href="shop.html" class="h-menuLiA">Магазин</a></li>
-					<li class="menuLi"><a href="about.html" class="h-menuLiA">Обо мне</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="h-mainBlockP">
-			<div class="h-logoBlock">
-				<a href="index.html" class="h-LogoA"><img src="img/Logo.svg" alt="Logo" class="h-logo"></a>
-			</div>
-			<div class="menuButton noReady">
-				<div class="menuButtonClick">
-					<div class="menuButtonLine1"></div>
-					<div class="menuButtonLine2"></div>
-					<div class="menuButtonLine3"></div>
+<body id="body">
+	<div class="allCont">
+		<header>
+			<div class="h-mainBlock">
+				<div class="h-logoBlock">
+					<a href="index.html" class="h-LogoA"><img src="img/Logo.svg" alt="Logo" class="h-logo"></a>
+				</div>
+				<div class="h-menuBlock">
+					<ul class="h-menu">
+						<li class="menuLi"><a href="index.html" class="h-menuLiA">Галерея</a></li>
+						<li class="menuLi"><a href="shop.html" class="h-menuLiA">Магазин</a></li>
+						<li class="menuLi"><a href="about.html" class="h-menuLiA">Обо мне</a></li>
+					</ul>
 				</div>
 			</div>
-			<div class="menuFilter"></div>
-			<div class="phoneMenu">
-				<p class="pMenuLogo">SRD art.</p>
-				<ul class="pMenuUl">
-					<li class="pMenuLi"><a href="index.html" class="pMenuA">Галерея</a></li>
-					<li class="pMenuLi"><a href="shop.html" class="pMenuA">Магазин</a></li>
-					<li class="pMenuLi"><a href="about.html" class="pMenuA">Обо мне</a></li>
-				</ul>
+			<div class="h-mainBlockP">
+				<div class="h-logoBlock">
+					<a href="index.html" class="h-LogoA"><img src="img/Logo.svg" alt="Logo" class="h-logo"></a>
+				</div>
+				<div class="menuButton noReady">
+					<div class="menuButtonClick">
+						<div class="menuButtonLine1"></div>
+						<div class="menuButtonLine2"></div>
+						<div class="menuButtonLine3"></div>
+					</div>
+				</div>
+				<div class="menuFilter"></div>
+				<div class="phoneMenu">
+					<p class="pMenuLogo">SRD art.</p>
+					<ul class="pMenuUl">
+						<li class="pMenuLi"><a href="index.html" class="pMenuA">Галерея</a></li>
+						<li class="pMenuLi"><a href="shop.html" class="pMenuA">Магазин</a></li>
+						<li class="pMenuLi"><a href="about.html" class="pMenuA">Обо мне</a></li>
+					</ul>
+				</div>
 			</div>
+		</header>
+		<main>
+			<div class="m-Shop">
+				<p class="m-ShopP">Пока что здесь ничего, но скоро мы откроемся....</p>
+			</div>
+		</main>
+
+		<div id="preloader" class="preloader">
+			<img src="img/Logo.svg" alt="LogoPreloader" class="logoPreload">
 		</div>
-	</header>
-	<main>
-		<div class="m-Shop">
-			<p class="m-ShopP">Пока что здесь ничего, но скоро мы откроемся....</p>
-		</div>
-	</main>
-	
-	<div id="preloader" class="preloader">
-		<img src="img/Logo.svg" alt="LogoPreloader" class="logoPreload">
 	</div>
 </body>
 
@@ -62,4 +64,5 @@
 <script src="JS-gallery/jquery.fancybox.min.js"></script>
 <script src="menu.js"></script>
 <script src="preloader.js"></script>
+
 </html>
